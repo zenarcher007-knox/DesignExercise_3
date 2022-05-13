@@ -2,8 +2,8 @@ package exer3;
 
 /* A prop. */
 public class Coffee {
-  public String type;
-  public Coffee(String type) {
+  public CoffeeType type;
+  public Coffee(CoffeeType type) {
     this.type = type; // There's nothing preventing one from having a custom type of coffee,
     // but the CoffeeType types are the ones on the menu.
   }

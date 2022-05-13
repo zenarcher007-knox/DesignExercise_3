@@ -4,9 +4,9 @@ package exer3;
 public class Person {
   private MembershipCard card; // A Person is given a card by Starbucks.
   private String name; // Each individual has their own name,
-  private String coffeePref; // ...and coffee preference.
+  private CoffeeType coffeePref; // ...and coffee preference.
   
-  public Person(String name, String coffeePref, MembershipCard card) {
+  public Person(String name, CoffeeType coffeePref, MembershipCard card) {
     this.card = card;
     this.name = name;
     this.coffeePref = coffeePref;
@@ -15,5 +15,5 @@ public class Person {
   /* Asks the person to take out their membership card. */
   public MembershipCard askForCard() { return card; }
   public String askForName() { return name; }
-  public String askForCoffeePref() { return coffeePref; }
+  public CoffeeType askForCoffeePref() { return coffeePref; }
 }

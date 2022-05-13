@@ -24,14 +24,14 @@ public class CoffeeShop {
     
     // There is a Person. His name is John. He likes black, cream/sugarless coffee, like me.
     // You give him a brand new MembershipCard...
-    Person John = new Person("John", CoffeeType.black, new MembershipCard());
+    Person John = new Person("John", CoffeeType.BLACK, new MembershipCard());
     
     { /* ===== Day 1 - registering as a member... ===== */
       // Ask John for the required information, and enter his data into the database...
       MembershipCard card = John.askForCard(); // Enter the card you just gave him 
       // (or probably before you give it to him).
       String name = John.askForName(); // What is your name?
-      String coffeePref = John.askForCoffeePref(); // What is your coffee preference?
+      CoffeeType coffeePref = John.askForCoffeePref(); // What is your coffee preference?
 
       // Enter the information into a DataEntry, and put it into the database.
       DataEntry entry = new DataEntry(name, coffeePref);
